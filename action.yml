@@ -1,0 +1,15 @@
+name: "espressif idf build"
+description: "This action builds esp idf firmware directly in github using Espressif idf SDK."
+branding:
+  color: red
+  icon: check
+inputs:
+  board:  
+    description: 'The target board'
+    required: true
+    default: 'esp32'
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.board }}
