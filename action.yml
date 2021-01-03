@@ -3,13 +3,6 @@ description: "This action builds esp idf firmware with risc-v support directly i
 branding:
   color: red
   icon: check
-inputs:
-  board:  
-    description: 'The target board'
-    required: true
-    default: 'esp32'
 runs:
   using: "docker"
   image: "Dockerfile"
-  args:
-    - ${{ inputs.board }}

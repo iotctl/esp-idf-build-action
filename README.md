@@ -4,12 +4,6 @@ This action builds esp idf firmware with risc-v support directly in github using
 
 ## Inputs
 
-### `board`
-
-**Required** The name of the target board to build for. Default `"esp32"`.
-
 ## Example usage
 
 uses: iotctl/esp-idf-build-action@v1
-with:
-  board: 'esp32s2'
