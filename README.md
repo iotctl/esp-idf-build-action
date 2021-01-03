@@ -1,6 +1,6 @@
-# Espressif IDF build action
+# Espressif IDF build action with RISC-V support
 
-This action builds esp idf firmware directly in github using Espressif idf SDK.
+This action builds esp idf firmware with risc-v support directly in github using Espressif idf SDK.
 
 ## Inputs
 
@@ -10,6 +10,6 @@ This action builds esp idf firmware directly in github using Espressif idf SDK.
 
 ## Example usage
 
-uses: actions/hello-world-docker-action@v1
+uses: iotctl/esp-idf-build-action@v1
 with:
   board: 'esp32s2'
