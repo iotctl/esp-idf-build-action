@@ -1,5 +1,4 @@
-FROM espressif/idf
-
+FROM espressif/idf:latest
 # Install all the required tools
 RUN $IDF_PATH/tools/idf_tools.py --non-interactive install riscv-none-embed-gcc \
   && rm -rf $IDF_TOOLS_PATH/disto
